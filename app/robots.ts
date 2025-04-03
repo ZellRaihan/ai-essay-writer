@@ -1,16 +1,14 @@
 import { MetadataRoute } from 'next'
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'
+
 export default function robots(): MetadataRoute.Robots {
-  const deploymentUrl = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : "https://ai-essay-writer.vercel.app"
-  
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/'],
+      disallow: ['/api/', '/private/'],
     },
-    sitemap: `${deploymentUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
   }
 } 

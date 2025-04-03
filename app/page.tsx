@@ -5,22 +5,22 @@ import EssayGenerator from "@/components/EssayGenerator"
 import MarketingContent from "@/components/MarketingContent"
 import Script from "next/script"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'
+
 export const metadata: Metadata = {
   title: "AI Essay Writer - Free Essay Generator Tool",
   description: "Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required. Perfect for students, professionals, and content creators.",
 }
 
 export default function Home() {
-  const deploymentUrl = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : "https://ai-essay-writer.vercel.app"
-    
+  const shareUrl = siteUrl
+  
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "AI Essay Writer",
     "description": "Free AI-powered essay generator tool that creates well-structured, engaging essays on any topic. No signup required.",
-    "url": deploymentUrl,
+    "url": siteUrl,
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -40,15 +40,15 @@ export default function Home() {
     "creator": {
       "@type": "Organization",
       "name": "AI Essay Writer",
-      "url": deploymentUrl,
-      "logo": `${deploymentUrl}/ai-essay-writer-thumbnail.webp`
+      "url": siteUrl,
+      "logo": `${siteUrl}/ai-essay-writer-thumbnail.webp`
     },
     "potentialAction": {
       "@type": "UseAction",
-      "target": `${deploymentUrl}/#generator`
+      "target": `${siteUrl}/#generator`
     },
-    "image": `${deploymentUrl}/ai-essay-writer-thumbnail.webp`,
-    "screenshot": `${deploymentUrl}/ai-essay-writer-thumbnail.webp`,
+    "image": `${siteUrl}/ai-essay-writer-thumbnail.webp`,
+    "screenshot": `${siteUrl}/ai-essay-writer-thumbnail.webp`,
     "featureList": [
       "Multiple essay types",
       "Adjustable word count",
@@ -107,31 +107,31 @@ export default function Home() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": deploymentUrl
+        "item": siteUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Essay Generator",
-        "item": `${deploymentUrl}/#generator`
+        "item": `${siteUrl}/#generator`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Features",
-        "item": `${deploymentUrl}/#features`
+        "item": `${siteUrl}/#features`
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "How It Works",
-        "item": `${deploymentUrl}/#how-it-works`
+        "item": `${siteUrl}/#how-it-works`
       },
       {
         "@type": "ListItem",
         "position": 5,
         "name": "FAQ",
-        "item": `${deploymentUrl}/#faq`
+        "item": `${siteUrl}/#faq`
       }
     ]
   }

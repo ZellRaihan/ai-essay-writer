@@ -2,14 +2,12 @@ import Link from "next/link"
 import styles from "@/styles/Footer.module.css"
 
 export default function Footer() {
-  const deploymentUrl = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : "https://ai-essay-writer.vercel.app"
-    
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'
+  
   const socialLinks = {
-    twitter: `https://twitter.com/intent/tweet?text=Create%20essays%20instantly%20with%20AI%20Essay%20Writer%20-%20Free%20and%20no%20signup%20required!&url=${encodeURIComponent(deploymentUrl)}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(deploymentUrl)}`,
-    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(deploymentUrl)}&title=AI%20Essay%20Writer%20-%20Free%20Essay%20Generator&summary=Create%20well-structured%20essays%20instantly%20with%20AI`
+    twitter: `https://twitter.com/intent/tweet?text=Create%20essays%20instantly%20with%20AI%20Essay%20Writer%20-%20Free%20and%20no%20signup%20required!&url=${encodeURIComponent(siteUrl)}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`,
+    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(siteUrl)}&title=AI%20Essay%20Writer%20-%20Free%20Essay%20Generator&summary=Create%20well-structured%20essays%20instantly%20with%20AI`
   }
 
   const currentYear = new Date().getFullYear();

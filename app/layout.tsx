@@ -2,12 +2,10 @@ import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
 
-const deploymentUrl = process.env.VERCEL_URL 
-  ? `https://${process.env.VERCEL_URL}` 
-  : "https://ai-essay-writer.vercel.app"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(deploymentUrl),
+  metadataBase: new URL(siteUrl),
   title: "AI Essay Writer - Free Essay Generator Tool",
   description:
     "Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required. Perfect for students, professionals, and content creators.",
@@ -26,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI Essay Writer - Free Essay Generator Tool',
     description: 'Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required.',
-    url: deploymentUrl,
+    url: siteUrl,
     siteName: 'AI Essay Writer',
     images: [
       {
@@ -84,7 +82,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   alternates: {
-    canonical: deploymentUrl,
+    canonical: siteUrl,
   },
 }
 
@@ -96,7 +94,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href={deploymentUrl} />
+        <link rel="canonical" href={siteUrl} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
