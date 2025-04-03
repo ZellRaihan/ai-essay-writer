@@ -23,8 +23,7 @@ export default function Footer() {
             </Link>
 
             <p className={styles.description}>
-              AI-powered essay writing assistant that helps you create high-quality content in minutes. No signup, no
-              credit card, completely free to use.
+              Create well-structured, engaging essays on any topic with our free AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.
             </p>
 
             <nav aria-label="Primary Footer Navigation">
@@ -119,9 +118,7 @@ export default function Footer() {
           <div className={styles.disclaimer}>
             <h3 className={styles.disclaimerTitle}>Important Information</h3>
             <p>
-              AI Essay Writer is designed to assist with writing and brainstorming. While our AI generates high-quality
-              content, we recommend reviewing and editing the output to ensure it meets your specific requirements and
-              standards.
+              AI Essay Writer is designed to assist with writing and brainstorming. Create well-structured, engaging essays on any topic with our free tool. No signup required.
             </p>
             <p>
               For academic purposes, please follow your institution's guidelines regarding the use of AI-generated

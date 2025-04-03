@@ -31,9 +31,7 @@ export default function HeroSection() {
         </h1>
 
         <p className={styles.subtitle}>
-          Generate well-structured, engaging essays on any topic in seconds. Our free AI tool helps you create
-          compelling content without creating an account. Perfect for brainstorming, overcoming writer's block, or
-          getting a head start on your writing projects.
+          Create well-structured, engaging essays on any topic with our free AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.
         </p>
 
         <div className={styles.features}>
