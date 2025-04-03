@@ -11,12 +11,12 @@ export default function MarketingContent() {
         <div className={styles.introContent}>
           <div className={styles.introText}>
             <p className={styles.paragraph}>
-              AI Essay Writer is a Ai Tool that can transfrom your ideas into well-structured, engaging essays. This
+              AI Essay Writer is an AI tool that can transform your ideas into well-structured, engaging essays. This
               transformation ensures your essays are well organized, well-researched, and clear, saving you hours of research
               and writing time.
             </p>
             <p className={styles.paragraph}>
-              Our AI Essay Generator help you generate essays with various versions such as academic formatting, proper citations, logical
+              Our AI Essay Generator helps you generate essays with various features such as academic formatting, proper citations, logical
               structure, engaging introductions, and strong conclusions, all contributing to the creation of essays that
               meet academic standards while maintaining your unique perspective.
             </p>

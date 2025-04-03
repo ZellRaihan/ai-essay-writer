@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "AI Essay Writer - Free Essay Generator Tool",
   description:
-    "Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required. Perfect for students, professionals, and content creators.",
+    "Create well-structured, engaging essays on any topic with our free With AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.",
   keywords: "AI essay writer, essay generator, free essay writer, AI writing tool, academic writing, essay help",
   generator: 'Next.js',
   applicationName: 'AI Essay Writer',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'AI Essay Writer - Free Essay Generator Tool',
-    description: 'Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required.',
+    description: 'Create well-structured, engaging essays on any topic with our free With AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.',
     url: siteUrl,
     siteName: 'AI Essay Writer',
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AI Essay Writer - Free Essay Generator Tool',
-    description: 'Create well-structured, engaging essays on any topic with our free AI-powered essay generator.',
+    description: 'Create well-structured, engaging essays on any topic with our free With AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.',
     images: ['/ai-essay-writer-thumbnail.webp'],
   },
   robots: {

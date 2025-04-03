@@ -9,7 +9,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_VERC
 
 export const metadata: Metadata = {
   title: "AI Essay Writer - Free Essay Generator Tool",
-  description: "Create well-structured, engaging essays on any topic with our free AI-powered essay generator. No signup required. Perfect for students, professionals, and content creators.",
+  description: "Create well-structured, engaging essays on any topic with our free With AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.",
 }
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "AI Essay Writer",
-    "description": "Free AI-powered essay generator tool that creates well-structured, engaging essays on any topic. No signup required.",
+    "description": "Create well-structured, engaging essays on any topic with our free AI Essay Writer. No signup required. Perfect for students, professionals, and content creators.",
     "url": siteUrl,
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
@@ -68,7 +68,7 @@ export default function Home() {
         "name": "What is AI Essay Writer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AI Essay Writer is a leading online essay generation tool that creates well-structured, coherent essays on any topic. It's ideal for students, researchers, and professionals looking to save time and overcome writer's block."
+          "text": "AI Essay Writer is a free online essay generation tool that creates well-structured, engaging essays on any topic. It's perfect for students, professionals, and content creators looking to save time and overcome writer's block."
         }
       },
       {
@@ -76,7 +76,7 @@ export default function Home() {
         "name": "How does the AI Essay Writer tool work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The tool uses advanced AI language models to generate essays based on your topic and preferences. Simply enter your topic, select essay type and other settings, and our AI creates a well-structured essay tailored to your requirements."
+          "text": "Simply enter your topic, select your essay type and preferences, and our AI will create a well-structured essay tailored to your requirements. No signup required - start writing instantly."
         }
       },
       {
@@ -84,7 +84,7 @@ export default function Home() {
         "name": "Is the AI Essay Writer tool free to use?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our AI Essay Writer is completely free, offering unlimited access without any hidden charges."
+          "text": "Yes, AI Essay Writer is completely free with no hidden charges. You can generate unlimited essays without creating an account."
         }
       },
       {
